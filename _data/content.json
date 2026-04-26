@@ -15,16 +15,28 @@
   "arguments_sub": "13 argumenter. Ét svar.",
   "timeline_h2": "Hvad sker der nu?",
   "timeline_steps": [
-    {"date": "18. maj 2026", "desc": "Ordinær generalforsamling — vi stemmer"},
-    {"date": "Juni 2026", "desc": "Formel ansøgning til kommunen · Vejrenovering begynder i kvarteret"},
-    {"date": "Sommer–efterår 2026", "desc": "Kommunen lægger nyt asfalt + etablerer fællesskabsgaden"},
-    {"date": "2027", "desc": "Fællesskabsgaden står klar. Kommunen drifter."}
+    {
+      "date": "18. maj 2026",
+      "desc": "Ordinær generalforsamling — vi stemmer"
+    },
+    {
+      "date": "Juni 2026",
+      "desc": "Formel ansøgning til kommunen · Vejrenovering begynder i kvarteret"
+    },
+    {
+      "date": "Sommer–efterår 2026",
+      "desc": "Kommunen lægger nyt asfalt + etablerer fællesskabsgaden"
+    },
+    {
+      "date": "2027",
+      "desc": "Fællesskabsgaden står klar. Kommunen drifter."
+    }
   ],
-  "quiet_h2": "Hvorfor sidder vi her?",
-  "quiet_p1": "Vi ville have haft den her afstemning på den ordinære generalforsamling den 18. maj. Vi er glade for at den er på dagsordenen.",
-  "quiet_p2": "Bestyrelsen har sat betingelser for sin anbefaling. Vi mener betingelserne er opfyldt — kommunen har bekræftet parkering netto nul, og arbejdsgruppen er klar til at tage ansvar for processen.",
-  "quiet_p3": "Vi respekterer bestyrelsens rolle. Men det er jeres kvarter og jeres stemme der afgør det her. Simpelt flertal. Demokrati.",
-  "quiet_p4": "Kom og stem. Tag en nabo med.",
+  "quiet_h2": "Hvad siger bestyrelsen — og hvad svarer vi?",
+  "quiet_p1": "Bestyrelsen har meddelt at de vil fraråde forslaget, medmindre fire betingelser er opfyldt. Vi tager betingelserne seriøst og svarer på dem her.",
+  "quiet_p2": "Vi respekterer bestyrelsens rolle. Men det er jer som beboere der afgør dette på generalforsamlingen den 18. maj. Simpelt flertal.",
+  "quiet_p3": "Kom og stem. Tag en nabo med.",
+  "quiet_p4": "",
   "quiet_p5": "",
   "footer_h2": "Mød op. Stem. Bestem.",
   "footer_event_type": "Ordinær generalforsamling",
@@ -36,5 +48,7 @@
   "signup_h3": "Skriv dit hus op",
   "signup_sub": "Vis at dit hus støtter Fællesskabsgaden. Vi bruger listen til at demonstrere opbakning på generalforsamlingen.",
   "signup_success": "Vi ses på generalforsamlingen den 18. maj.",
-  "password": "engelstedsgade"
+  "password": "engelstedsgade",
+  "faq_why_gf_q": "Hvad kræver et ja på generalforsamlingen?",
+  "faq_why_gf_a": "Simpelt flertal. Det vil sige over halvdelen af de fremmødte stemmer ja. Vedtægternes §14 er klar: der kræves ikke enstemmighed. Det er det samme grundlag som alle andre beslutninger i foreningen."
 }
