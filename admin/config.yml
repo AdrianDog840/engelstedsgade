@@ -2,7 +2,8 @@ backend:
   name: github
   repo: AdrianDog840/engelstedsgade
   branch: main
-  base_url: https://decapcms-auth.netlify.app
+  auth_type: implicit
+  app_id: placeholder
 
 media_folder: "images"
 public_folder: "/images"
