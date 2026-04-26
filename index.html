@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fællesskabsgaden — Engelstedsgade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<script>
+  try {
+    if (sessionStorage.getItem('fg_unlocked') === '1') {
+      document.documentElement.classList.add('fg-unlocked');
+    }
+  } catch (_) {}
+</script>
+<style>
+:root {
+  --green: #1B4332;
+  --green-mid: #2D6A4F;
+  --green-light: #40916C;
+  --green-pale: #D8F3DC;
+  --sand: #FAF3E0;
+  --sand-dark: #EDE3CC;
+  --dark: #0F0F14;
+  --dark-soft: #1A1A2E;
+  --terracotta: #C77B5A;
+  --terracotta-light: #E8A87C;
+  --white: #FFFFFF;
+  --off-white: #FAFAF8;
+  --gray-100: #F4F4F2;
+  --gray-200: #E5E5E2;
+  --gray-400: #9B9B96;
+  --gray-600: #5A5A56;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 17px; }
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--dark);
+  background: var(--white);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: 'Syne', sans-serif;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* ─── HERO ─── */
+.hero {
+  background: var(--green);
+  color: var(--white);
+  padding: 110px 28px 90px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, var(--sand));
+}
+
+.hero .eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--green-pale);
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(1.15rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 24px;
+  letter-spacing: -0.04em;
+  color: var(--white);
+}
+
+.hero .subtitle {
+  font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+  font-weight: 400;
+  color: var(--white);
+  opacity: 0.95;
+  max-width: 560px;
+  margin: 0 auto 28px;
+  line-height: 1.55;
+}
+
+.hero .intro {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+  max-width: 520px;
+  margin: 0 auto 44px;
+  line-height: 1.75;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: var(--terracotta);
+  color: var(--white);
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 17px 44px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  letter-spacing: 0.01em;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(199, 123, 90, 0.45);
+  background: #B86D4E;
+}
+
+/* ─── SECTIONS ─── */
+section { padding: 88px 28px; }
+
+section h2 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+section p.lead {
+  font-size: 1.1rem;
+  color: var(--gray-600);
+  max-width: 640px;
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+/* ─── PROPOSAL ─── */
+.proposal { background: var(--sand); }
+.proposal h2 { color: var(--green); }
+
+.before-after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 44px;
+}
+
+.before-after .panel {
+  background: var(--white);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: transform 0.2s;
+}
+
+.before-after .panel:hover { transform: translateY(-3px); }
+.before-after .panel img { width: 100%; display: block; }
+
+.before-after .panel .label {
+  padding: 16px 20px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.before-after .panel.before .label { color: var(--gray-400); }
+.before-after .panel.after .label { color: var(--green-mid); }
+
+@media (max-width: 600px) {
+  .before-after { grid-template-columns: 1fr; }
+}
+
+/* ─── KEY STATS BAR ─── */
+.stats-bar {
+  background: var(--green);
+  color: var(--white);
+  padding: 48px 28px;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.stat-item .stat-number {
+  font-family: 'Syne', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--terracotta-light);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-item .stat-label {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+  .stats-grid .stat-counter { grid-column: 1 / -1; }
+}
+
+/* ─── ARGUMENT CARDS ─── */
+.arguments { background: var(--off-white); }
+.arguments h2 { text-align: center; margin-bottom: 12px; }
+.arguments .section-sub {
+  text-align: center;
+  color: var(--gray-400);
+  font-size: 0.95rem;
+  margin-bottom: 48px;
+}
+
+.cards {
+  display: grid;
+  gap: 18px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-left: 4px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+}
+
+.card.accent-green { border-left-color: var(--green-light); }
+.card.accent-terra { border-left-color: var(--terracotta); }
+.card.accent-dark { border-left-color: var(--dark-soft); }
+
+.card .card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.card .emoji {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-100);
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.card p {
+  font-size: 0.92rem;
+  color: var(--gray-600);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ─── OPTIONS ─── */
+.options { background: var(--sand); }
+.options h2 { color: var(--green); }
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.options-grid .opt {
+  background: var(--white);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+  transition: transform 0.2s;
+}
+
+.options-grid .opt:hover { transform: translateY(-3px); }
+.options-grid .opt img { width: 100%; display: block; }
+
+.options-grid .opt .label {
+  padding: 14px 16px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--green-mid);
+}
+
+@media (max-width: 700px) {
+  .options-grid { grid-template-columns: 1fr; }
+}
+
+/* ─── TIMELINE ─── */
+.timeline-section { background: var(--off-white); }
+.timeline-section h2 { text-align: center; }
+
+.timeline {
+  max-width: 480px;
+  margin: 52px auto 0;
+  position: relative;
+  padding-left: 44px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 6px;
+  bottom: 6px;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--green-light), var(--terracotta));
+  border-radius: 3px;
+}
+
+.timeline .step {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline .step:last-child { margin-bottom: 0; }
+
+.timeline .step::before {
+  content: '';
+  position: absolute;
+  left: -36px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: var(--green);
+  border-radius: 50%;
+  border: 3px solid var(--off-white);
+  box-shadow: 0 0 0 3px var(--green-light);
+}
+
+.timeline .step .date {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 3px;
+}
+
+.timeline .step .desc {
+  font-size: 0.95rem;
+  color: var(--dark);
+  line-height: 1.5;
+}
+
+/* ─── FAQ ─── */
+.faq { background: var(--gray-100); }
+.faq h2 { text-align: center; margin-bottom: 52px; }
+
+.faq-item {
+  max-width: 640px;
+  margin: 0 auto 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.faq-item:last-child { border-bottom: none; margin-bottom: 0; }
+
+.faq-item h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--dark);
+}
+
+.faq-item p {
+  font-size: 0.92rem;
+  color: var(--gray-600);
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+/* ─── STILLE BESKED ─── */
+.quiet {
+  background: var(--dark);
+  color: var(--white);
+  position: relative;
+}
+
+.quiet::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--terracotta), var(--terracotta-light));
+}
+
+.quiet h2 {
+  color: var(--terracotta-light);
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  margin-bottom: 28px;
+}
+
+.quiet p {
+  color: rgba(255,255,255,0.78);
+  max-width: 600px;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.quiet p:last-child { margin-bottom: 0; }
+
+/* ─── FOOTER CTA ─── */
+.footer-cta {
+  background: var(--green);
+  color: var(--white);
+  text-align: center;
+  padding: 88px 28px;
+  position: relative;
+}
+
+.footer-cta h2 {
+  color: var(--white);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  margin-bottom: 28px;
+}
+
+.footer-cta .event {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 6px;
+}
+
+.footer-cta .event strong { font-weight: 700; }
+
+.footer-cta .cta-btn {
+  margin-top: 32px;
+  display: inline-block;
+}
+
+.footer-cta .contact {
+  margin-top: 36px;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.6);
+}
+
+.footer-cta .contact a {
+  color: var(--terracotta-light);
+  text-decoration: none;
+}
+
+.footer-cta .contact a:hover { text-decoration: underline; }
+
+.footer-cta .group {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.35);
+  font-style: italic;
+}
+
+/* ─── COUNTER + SIGNUP ─── */
+.signup-section {
+  background: var(--sand);
+  padding: 88px 28px;
+}
+
+.counter-display {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.counter-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--green-mid);
+  margin-bottom: 10px;
+}
+
+.counter-number {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(4rem, 14vw, 6rem);
+  font-weight: 800;
+  color: var(--green);
+  line-height: 1;
+  display: block;
+}
+
+.counter-suffix {
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(1.1rem, 3vw, 1.35rem);
+  color: var(--gray-600);
+  margin-top: 6px;
+}
+
+.progress-bar-wrap {
+  max-width: 380px;
+  margin: 22px auto 0;
+}
+
+.progress-bar {
+  background: var(--sand-dark);
+  border-radius: 50px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(to right, var(--green), var(--green-light));
+  border-radius: 50px;
+  width: 0%;
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 0.76rem;
+  color: var(--gray-400);
+  font-weight: 500;
+}
+
+/* Form card */
+.signup-card {
+  max-width: 560px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 40px 38px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.07);
+}
+
+.signup-card h3 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 6px;
+}
+
+.signup-card .card-sub {
+  font-size: 0.92rem;
+  color: var(--gray-600);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.form-row {
+  margin-bottom: 14px;
+}
+
+.form-row-split {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--dark);
+  letter-spacing: 0.025em;
+}
+
+.form-field select,
+.form-field input[type="text"] {
+  padding: 12px 14px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: var(--dark);
+  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form-field select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235A5A56' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 38px;
+  cursor: pointer;
+}
+
+.form-field select:focus,
+.form-field input[type="text"]:focus {
+  outline: none;
+  border-color: var(--green-light);
+  box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.13);
+}
+
+.form-field input[type="text"]::placeholder {
+  color: var(--gray-400);
+}
+
+.btn-submit {
+  width: 100%;
+  background: var(--green);
+  color: var(--white);
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 16px 28px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-top: 6px;
+  letter-spacing: 0.01em;
+}
+
+.btn-submit:hover {
+  background: var(--green-mid);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(27, 67, 50, 0.28);
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.form-disclaimer {
+  font-size: 0.78rem;
+  color: var(--gray-400);
+  text-align: center;
+  margin-top: 13px;
+  line-height: 1.5;
+}
+
+/* Success state */
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.success-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: var(--green-pale);
+  border-radius: 50%;
+  color: var(--green);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.form-success h4 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.35rem;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+
+.form-success p {
+  font-size: 0.92rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
+/* Counter animation */
+@keyframes counterPulse {
+  0%   { transform: scale(1); }
+  45%  { transform: scale(1.16); }
+  100% { transform: scale(1); }
+}
+
+.counter-number.pulse {
+  animation: counterPulse 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@media (max-width: 480px) {
+  .form-row-split { grid-template-columns: 1fr; }
+  .signup-card { padding: 30px 22px; }
+}
+
+/* ─── PASSWORD GATE ─── */
+.fg-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.fg-unlocked .fg-gate { display: none; }
+
+.fg-gate-inner {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.fg-gate-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  color: var(--white);
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.fg-gate-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--green-pale);
+  margin-bottom: 36px;
+}
+
+.fg-gate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fg-gate-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  border-radius: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--white);
+  background: rgba(255,255,255,0.08);
+  text-align: center;
+  letter-spacing: 0.05em;
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.fg-gate-input::placeholder { color: rgba(255,255,255,0.45); }
+
+.fg-gate-input:focus {
+  outline: none;
+  border-color: var(--green-light);
+  background: rgba(255,255,255,0.12);
+  box-shadow: 0 0 0 3px rgba(64, 145, 108, 0.25);
+}
+
+.fg-gate-btn {
+  width: 100%;
+  background: var(--terracotta);
+  color: var(--white);
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 15px 28px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  letter-spacing: 0.01em;
+}
+
+.fg-gate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(199, 123, 90, 0.4);
+  background: #B86D4E;
+}
+
+.fg-gate-error {
+  min-height: 1.2em;
+  font-size: 0.88rem;
+  color: #F5A6A6;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+@keyframes fg-shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-9px); }
+  40%, 80% { transform: translateX(9px); }
+}
+
+.fg-gate-shake { animation: fg-shake 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97); }
+
+/* ─── UTILITY ─── */
+img { max-width: 100%; height: auto; }
+
+@media (max-width: 600px) {
+  section { padding: 64px 22px; }
+  .hero { padding: 80px 22px 68px; }
+  .card { padding: 26px 22px; }
+  html { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- PASSWORD GATE -->
+<div class="fg-gate" id="fg-gate" role="dialog" aria-modal="true" aria-labelledby="fg-gate-title">
+  <div class="fg-gate-inner">
+    <div class="fg-gate-eyebrow">Engelstedsgade · Østerbro</div>
+    <h1 class="fg-gate-title" id="fg-gate-title">Fællesskabsgaden</h1>
+    <form class="fg-gate-form" id="fg-gate-form" autocomplete="off">
+      <input
+        type="password"
+        id="fg-gate-input"
+        class="fg-gate-input"
+        placeholder="Adgangskode"
+        autocomplete="off"
+        autocapitalize="off"
+        autocorrect="off"
+        spellcheck="false"
+        aria-label="Adgangskode">
+      <button type="submit" class="fg-gate-btn">Vis side</button>
+      <div class="fg-gate-error" id="fg-gate-error" role="alert" aria-live="polite"></div>
+    </form>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">Engelstedsgade · Østerbro · København</div>
+    <h1>Fællesskabsgaden</h1>
+    <p class="subtitle">Kommunen lægger nyt asfalt i sommer. Det er nu eller aldrig.</p>
+    <p class="intro">Vi har en unik mulighed for at flytte legegaden hen foran Fælleshuset, hvor den gavner flest — og gøre vores gade til et sted vi mødes, ikke bare kører igennem. Betalt af kommunen. Designet af os.</p>
+    <a href="#footer" class="cta-btn">Mød op den 12. maj →</a>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<section class="stats-bar">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-number">5</div>
+      <div class="stat-label">års legegade<br>Nul klager</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">85%</div>
+      <div class="stat-label">stemte ja<br>i 2021</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">0</div>
+      <div class="stat-label">tabte p-pladser<br>Netto nul</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">0 kr</div>
+      <div class="stat-label">i udgift<br>Kommunen betaler</div>
+    </div>
+    <div class="stat-item stat-counter">
+      <div class="stat-number" id="stats-count">13</div>
+      <div class="stat-label">huse<br>bakker op</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROPOSAL -->
+<section class="proposal">
+  <div class="container">
+    <h2>En gade for mennesker</h2>
+    <p class="lead">Vi har et fælleshus. Et rigtigt fælleshus med fællesspisning, loppemarked, aftenskole og fastelavn. Det er noget de fleste kvarterer i København kan misunde os.</p>
+    <p class="lead">Og hoveddøren åbner ud mod en gade med gennemkørende trafik. Fællesskabsgaden binder fælleshuset og gaderummet sammen — så man kan stå og snakke efter et arrangement, og ungerne kan løbe ud.</p>
+    <p class="lead">Shared space. Hævet asfaltflade fra hegn til hegn. Grønne bede, træer, Københavnerbænke. Biler kan stadig køre igennem. Renovation og redning er sikret.</p>
+
+    <div class="before-after">
+      <div class="panel before">
+        <img src="tegning-1.png" alt="Eksisterende forhold på Engelstedsgade" loading="lazy">
+        <div class="label">I dag — 14 pladser, asfalt, ingen ophold</div>
+      </div>
+      <div class="panel after">
+        <img src="tegning-2.png" alt="Forslag til nye forhold — Fællesskabsgaden" loading="lazy">
+        <div class="label">I morgen — fællesskab, grønt, 9 pladser</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARGUMENTS -->
+<section class="arguments">
+  <div class="container">
+    <h2>Hvorfor det her er en no-brainer</h2>
+    <p class="section-sub">13 argumenter. Ét svar.</p>
+    <div class="cards">
+
+      <div class="card accent-green">
+        <div class="card-header">
+          <span class="emoji">✅</span>
+          <h3>Det virker allerede</h3>
+        </div>
+        <p>Legegade på Engelstedsgade har kørt hver sommer siden 2020. Fem år. Nul klager. Børnene bruger det. Naboerne bruger det. Folk fra hele kvarteret kommer forbi. Det her er ikke et eksperiment — det er en dokumenteret succes. Vi formaliserer det bare.</p>
+      </div>
+
+      <div class="card accent-green">
+        <div class="card-header">
+          <span class="emoji">🏠</span>
+          <h3>Fælleshuset fortjener bedre</h3>
+        </div>
+        <p>Vi har noget de fleste kvarterer drømmer om: fællesspisning, yoga, loppemarked, fastelavn. Hoveddøren åbner direkte ud mod gaden — og lige nu kører der biler forbi. Fællesskabsgaden binder huset og gaden sammen til ét sted.</p>
+      </div>
+
+      <div class="card accent-terra">
+        <div class="card-header">
+          <span class="emoji">👶</span>
+          <h3>50 km/t og børn. Det er en konflikt.</h3>
+        </div>
+        <p>Der kører gennemkørende trafik på en gade hvor børn leger, cykler og løber frem og tilbage til fælleshuset. Fællesskabsgaden gør det tydeligt: her er du gæst — ikke på gennemfart. Maks 10 km/t. Bilisterne er forpligtet at passe på.</p>
+      </div>
+
+      <div class="card accent-terra">
+        <div class="card-header">
+          <span class="emoji">🚗</span>
+          <h3>Beauvais-grunden åbner. Trafikken stiger.</h3>
+        </div>
+        <p>Beauvais-grunden og den nye svømmehal giver markant mere gennemkørsel. Engelstedsgade er en af de gader trafikken kører igennem. Hvis vi ikke handler, bliver det værre. Det her er forebyggelse.</p>
+      </div>
+
+      <div class="card accent-green">
+        <div class="card-header">
+          <span class="emoji">⏰</span>
+          <h3>Kommunen lægger asfalt i sommer — vinduet er nu</h3>
+        </div>
+        <p>Kommunen begynder vejrenoveringen i juni 2026 — halvandet års arbejde, etapevis. Projektlederen har bekræftet at vi kan koordinere. Ingen ekstra graveperiode, ingen ekstra gene. Venter vi, lægger de standard asfalt, og næste chance er om 15–20 år.</p>
+      </div>
+
+      <div class="card accent-green">
+        <div class="card-header">
+          <span class="emoji">🅿️</span>
+          <h3>Parkering: netto nul</h3>
+        </div>
+        <p>Legegaden flyttes fra Rudolph Berghs Gade til Engelstedsgade. Det frigiver 5 pladser på RBG. 5 ned, 5 op. Kvarteret mister ikke en eneste parkeringsplads. Kommunen validerer regnestykket.</p>
+      </div>
+
+      <div class="card accent-dark">
+        <div class="card-header">
+          <span class="emoji">💰</span>
+          <h3>Det koster dig ingenting</h3>
+        </div>
+        <p>Kommunen betaler retablering til nutidig standard som del af genopretningsprojektet. Kommunen overtager al drift og vedligehold. Foreningen betaler kun eventuelle tilkøb ud over standard. Det er den bedste deal du får.</p>
+      </div>
+
+      <div class="card accent-dark">
+        <div class="card-header">
+          <span class="emoji">📈</span>
+          <h3>Dine mursten stiger i værdi</h3>
+        </div>
+        <p>Kvarterer med lav hastighed, grønne gaderum og aktive fællesskaber er mere attraktive. Kartoffelrækkerne, Brumleby, Komponistkvarteret — alle steder hvor netop den type gaderum har løftet hele områdets værdi. En fællesskabsgade er en investering der smitter af på alles friværdi.</p>
+      </div>
+
+      <div class="card accent-green">
+        <div class="card-header">
+          <span class="emoji">🌳</span>
+          <h3>Grønnere, smukkere, bedre</h3>
+        </div>
+        <p>Udvidede plantebede, plads til cykler i gaderummet i stedet for på fortovet, maling på kørebane til leg og boldspil. En gade der ser ud som den hører til på Østerbro i 2026 — ikke 1986.</p>
+      </div>
+
+      <div class="card accent-green">
+        <div class="card-header">
+          <span class="emoji">🗳️</span>
+          <h3>Kvarteret har stemt ja — fire gange</h3>
+        </div>
+        <p>2018: 130 beboere stemte ja til trafiksanering. 2019: 98 stemte ja til 350.000 kr til helhedsplan. 2021: 85% foretrak ambitiøs udvikling. 2022: Helhedsplanen vedtaget. Mandatet er der. Det handler om at tage det næste skridt.</p>
+      </div>
+
+      <div class="card accent-dark">
+        <div class="card-header">
+          <span class="emoji">📋</span>
+          <h3>Vi har allerede besluttet og betalt</h3>
+        </div>
+        <p>Foreningen bevilgede 350.000 kr til en helhedsplan i 2019. Planen blev vedtaget i 2022. Den anbefaler specifikt opholds- og legegader. Fællesskabsgaden er en direkte udmøntning af det arbejde kvarteret allerede har stemt ja til og betalt for.</p>
+      </div>
+
+      <div class="card accent-green">
+        <div class="card-header">
+          <span class="emoji">🚒</span>
+          <h3>Gennemkørsel bevaret</h3>
+        </div>
+        <p>Gaden lukkes ikke. Renovationsbiler, ambulancer og brandvæsen kan køre igennem præcis som i dag. Beboere kan køre til og fra. Det eneste der ændrer sig er at gaden indrettes så hastigheden er lav og mennesker prioriteres.</p>
+      </div>
+
+      <div class="card accent-terra">
+        <div class="card-header">
+          <span class="emoji">⚡</span>
+          <h3>Om 2–3 år ser gaden anderledes ud. Spørgsmålet er om den ser bedre eller værre ud.</h3>
+        </div>
+        <p>Det her er chancen for at vi bestemmer. Engelstedsgade er bare begyndelsen.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- OPTIONS -->
+<section class="options">
+  <div class="container">
+    <h2>Tre varianter for kørebanen</h2>
+    <p class="lead">Kommunen vurderer hvilken linjeføring der fungerer bedst teknisk. Alle tre bevarer shared space, bænke og grønt.</p>
+    <div class="options-grid">
+      <div class="opt">
+        <img src="tegning-3.png" alt="Kørebane Variant 1" loading="lazy">
+        <div class="label">Variant 1</div>
+      </div>
+      <div class="opt">
+        <img src="tegning-4.png" alt="Kørebane Variant 2" loading="lazy">
+        <div class="label">Variant 2</div>
+      </div>
+      <div class="opt">
+        <img src="tegning-5.png" alt="Kørebane Variant 3" loading="lazy">
+        <div class="label">Variant 3</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline-section">
+  <div class="container">
+    <h2>Hvad sker der nu?</h2>
+    <div class="timeline">
+      <div class="step">
+        <div class="date">12. maj 2026</div>
+        <div class="desc">Ekstraordinær generalforsamling — vi stemmer</div>
+      </div>
+      <div class="step">
+        <div class="date">Juni 2026</div>
+        <div class="desc">Formel ansøgning til kommunen · Vejrenovering begynder i kvarteret</div>
+      </div>
+      <div class="step">
+        <div class="date">Sommer–efterår 2026</div>
+        <div class="desc">Kommunen lægger nyt asfalt + etablerer fællesskabsgaden</div>
+      </div>
+      <div class="step">
+        <div class="date">2027</div>
+        <div class="desc">Fællesskabsgaden står klar. Kommunen drifter.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <h2>Spørgsmål og svar</h2>
+
+    <div class="faq-item">
+      <h3>Mister vi parkeringspladser?</h3>
+      <p>Netto: nej. Legegaden flyttes fra Rudolph Berghs Gade til Engelstedsgade. 5 ned, 5 op. Kvarteret mister ikke en eneste plads. Kommunen har bekræftet balancen.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Kan biler stadig køre igennem?</h3>
+      <p>Ja. Fællesskabsgaden er shared space med lav hastighed. Renovationsbiler, ambulancer, brandvæsen og daglig trafik fungerer som normalt. Gaden lukkes ikke.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Hvem betaler?</h3>
+      <p>Kommunen betaler retablering til nutidig standard som del af genopretningsprojektet. Kommunen overtager al drift. Foreningen betaler kun eventuelle tilkøb ud over standard.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Hvad med Rudolph Berghs Gade?</h3>
+      <p>Den eksisterende legegade på RBG sløjfes. Det frigiver parkeringspladser der modsvarer dem der nedlægges på Engelstedsgade. Beboerne i RBG inddrages i processen.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Er det permanent? Kan det laves om?</h3>
+      <p>Gaden lukkes ikke. Det eneste “permanente” er at kommunen overtager drift i stedet for at foreningen skal søge ny tilladelse hvert år. Vi har allerede haft legegade i 5 år — nu slipper vi bare for papirarbejdet.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Hvad med støj om sommeren?</h3>
+      <p>Vi har haft legegade i 5 år. Nul klager. Ordensregler fastholdes. Fællesskabsgaden er ikke en festplads — det er et roligt opholds- og legeområde.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Hvorfor en ekstraordinær generalforsamling?</h3>
+      <p>Initiativgruppen bad bestyrelsen tage forslaget med på den ordinære GF den 19. maj. Bestyrelsen valgte ikke at gøre det. Vedtægterne giver 40 medlemmer ret til at indkalde ekstraordinær GF med 8 dages varsel. Det er demokrati — og den mulighed vi bruger.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEN STILLE BESKED -->
+<section class="quiet">
+  <div class="container">
+    <h2>Hvorfor sidder vi her?</h2>
+    <p>Vi ville have haft den her afstemning på den ordinære generalforsamling den 19. maj. Det havde været nemmere for alle.</p>
+    <p>Bestyrelsen valgte at sige nej — trods tidligere opbakning, trods kommunens positive tilkendegivelser, og trods at formanden selv bekræftede forslaget var modtaget rettidigt.</p>
+    <p>Vi respekterer bestyrelsens rolle. Men vi bruger den demokratiske ret som vedtægterne giver os. 40 underskrifter, 8 dages varsel, én afstemning.</p>
+    <p>Den ekstraordinære generalforsamling koster foreningen penge og tid. Den kræver at I møder op en ekstra gang. Det beklager vi. Det var ikke vores ønske.</p>
+    <p>Men spørgsmålet om kvarterets fremtid fortjener en bred, demokratisk beslutning. Ikke en intern bestyrelsesbeslutning.</p>
+  </div>
+</section>
+
+<!-- COUNTER + SIGNUP -->
+<section class="signup-section" id="skriv-op">
+  <div class="container">
+
+    <div class="counter-display">
+      <div class="counter-eyebrow">Opbakning fra kvarteret</div>
+      <span class="counter-number" id="main-count">13</span>
+      <div class="counter-suffix">huse bakker op</div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <div class="progress-labels">
+          <span>0 huse</span>
+          <span>Mål: 40 huse</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="signup-card">
+      <h3>Skriv dit hus op</h3>
+      <p class="card-sub">Vis at dit hus støtter Fællesskabsgaden. Vi bruger listen til at demonstrere opbakning på generalforsamlingen.</p>
+
+      <form id="signup-form">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="gade">Gade</label>
+            <select id="gade" name="gade" required>
+              <option value="" disabled selected>Vælg gade…</option>
+              <option>Engelstedsgade</option>
+              <option>H.P. Ørums Gade</option>
+              <option>Valdemar Holmers Gade</option>
+              <option>Rudolph Berghs Gade</option>
+              <option>F.F. Ulriks Gade</option>
+              <option>Studsgaardsgade</option>
+              <option>Borthigsgade</option>
+              <option>Lyngbyvej</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row-split">
+          <div class="form-field">
+            <label for="navn">Navn</label>
+            <input type="text" id="navn" name="navn" placeholder="Dit navn" required autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="husnummer">Husnr.</label>
+            <input type="text" id="husnummer" name="husnummer" placeholder="fx 12A" required autocomplete="off">
+          </div>
+        </div>
+        <button type="submit" class="btn-submit">Skriv mig op</button>
+        <p class="form-disclaimer">Vi kontakter dig med underskrift. Dine oplysninger deles ikke.</p>
+      </form>
+
+      <div class="form-success" id="form-success">
+        <div class="success-check">✓</div>
+        <h4>Tak for din opbakning!</h4>
+        <p>Dit hus er skrevet op. Vi ses på generalforsamlingen den 12. maj.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER CTA -->
+<section class="footer-cta" id="footer">
+  <div class="container">
+    <h2>Mød op. Stem. Bestem.</h2>
+    <p class="event">Ekstraordinær generalforsamling</p>
+    <p class="event"><strong>Tirsdag den 12. maj 2026</strong></p>
+    <p class="event">Tid og sted følger</p>
+    <a href="#footer" class="cta-btn">Din stemme tæller →</a>
+    <div class="contact">Spørgsmål? Skriv til <a href="/cdn-cgi/l/email-protection#137e726b537f7c7176617e766a76613d7778"><span class="__cf_email__" data-cfemail="492428310925262b2c3b242c302c3b672d22">[email&#160;protected]</span></a></div>
+    <div class="group">Initiativgruppen for Fællesskabsgaden</div>
+  </div>
+</section>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+(function () {
+  const PASSWORD = 'engelstedsgade';
+  const gate = document.getElementById('fg-gate');
+  if (!gate) return;
+
+  if (sessionStorage.getItem('fg_unlocked') === '1') {
+    gate.remove();
+    return;
+  }
+
+  const form = document.getElementById('fg-gate-form');
+  const input = document.getElementById('fg-gate-input');
+  const error = document.getElementById('fg-gate-error');
+  const inner = gate.querySelector('.fg-gate-inner');
+
+  input.focus();
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const value = (input.value || '').trim().toLowerCase();
+    if (value === PASSWORD) {
+      try { sessionStorage.setItem('fg_unlocked', '1'); } catch (_) {}
+      document.documentElement.classList.add('fg-unlocked');
+      gate.remove();
+    } else {
+      error.textContent = 'Forkert adgangskode';
+      inner.classList.remove('fg-gate-shake');
+      void inner.offsetWidth;
+      inner.classList.add('fg-gate-shake');
+      input.select();
+    }
+  });
+
+  input.addEventListener('input', function () {
+    if (error.textContent) error.textContent = '';
+  });
+})();
+</script>
+
+<script>
+(function () {
+  const GOAL = 40;
+  const BASE = 13;
+
+  function setCounter(count) {
+    const mainEl = document.getElementById('main-count');
+    const statsEl = document.getElementById('stats-count');
+    const fill = document.getElementById('progress-fill');
+
+    if (mainEl) {
+      const prev = parseInt(mainEl.textContent) || 0;
+      mainEl.textContent = count;
+      if (count !== prev) {
+        mainEl.classList.remove('pulse');
+        void mainEl.offsetWidth; // trigger reflow to restart animation
+        mainEl.classList.add('pulse');
+      }
+    }
+
+    if (statsEl) statsEl.textContent = count;
+
+    if (fill) {
+      fill.style.width = Math.min(100, Math.round((count / GOAL) * 100)) + '%';
+    }
+  }
+
+  async function fetchCount() {
+    try {
+      const res = await fetch('/api/count');
+      if (!res.ok) return;
+      const data = await res.json();
+      if (typeof data.count === 'number') setCounter(data.count);
+    } catch (_) {
+      // server not running — keep hardcoded value
+    }
+  }
+
+  // Initialize progress bar immediately with base count, then fetch real value
+  setCounter(BASE);
+  fetchCount();
+  setInterval(fetchCount, 30000);
+
+  // Form submission
+  const form = document.getElementById('signup-form');
+  if (form) {
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const btn = form.querySelector('.btn-submit');
+      const origText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Sender…';
+
+      const payload = {
+        gade: document.getElementById('gade').value,
+        husnummer: document.getElementById('husnummer').value,
+        navn: document.getElementById('navn').value,
+      };
+
+      try {
+        const res = await fetch('/api/signup', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        const data = await res.json();
+
+        if (res.ok) {
+          if (typeof data.count === 'number') setCounter(data.count);
+          form.style.display = 'none';
+          document.getElementById('form-success').style.display = 'block';
+        } else {
+          btn.disabled = false;
+          btn.textContent = origText;
+          alert(data.error || 'Noget gik galt. Prøv igen.');
+        }
+      } catch (_) {
+        btn.disabled = false;
+        btn.textContent = origText;
+        alert('Kunne ikke forbinde til serveren. Prøv igen om lidt.');
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>
