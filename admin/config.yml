@@ -2,6 +2,7 @@ backend:
   name: github
   repo: AdrianDog840/engelstedsgade
   branch: main
+  base_url: https://decapcms-auth.netlify.app
 
 media_folder: "images"
 public_folder: "/images"
@@ -17,6 +18,6 @@ collections:
           - { label: "Hero overskrift", name: "hero_title", widget: "string" }
           - { label: "Hero underoverskrift", name: "hero_subtitle", widget: "string" }
           - { label: "Hero intro", name: "hero_intro", widget: "text" }
-          - { label: "GF dato (fx 18. maj 2026)", name: "gf_date", widget: "string" }
-          - { label: "GF type (ordinær / ekstraordinær)", name: "gf_type", widget: "string" }
-          - { label: "CTA knap tekst", name: "cta_text", widget: "string" }
+          - { label: "GF dato", name: "gf_date", widget: "string" }
+          - { label: "GF type", name: "gf_type", widget: "string" }
+          - { label: "CTA tekst", name: "cta_text", widget: "string" }
