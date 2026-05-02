@@ -1,8 +1,54 @@
 {
   "hero_title": "Fællesskabsgaden",
-  "hero_subtitle": "En enestående chance for hele kvarteret",
-  "hero_intro": "Kommunen er klar. Vi er klar. Nu skal foreningen tage stilling.",
+  "hero_subtitle": "Kommunen lægger nyt asfalt i sommer. Det er nu eller aldrig.",
+  "hero_intro": "Vi har en unik mulighed for at flytte legegaden hen foran Fælleshuset, hvor den gavner flest — og gøre vores gade til et sted vi mødes, ikke bare kører igennem. Betalt af kommunen. Designet af os.",
   "gf_date": "18. maj 2026",
   "gf_type": "ordinær",
-  "cta_text": "Stem JA den 18. maj →"
+  "cta_text": "Mød op den 18. maj →",
+  "proposal_h2": "En gade for mennesker",
+  "proposal_p1": "Vi har et fælleshus. Et rigtigt fælleshus med fællesspisning, loppemarked, aftenskole og fastelavn. Det er noget de fleste kvarterer i København kan misunde os.",
+  "proposal_p2": "Og hoveddøren åbner ud mod en gade med gennemkørende trafik. Fællesskabsgaden binder fælleshuset og gaderummet sammen — så man kan stå og snakke efter et arrangement, og ungerne kan løbe ud.",
+  "proposal_p3": "Shared space. Hævet asfaltflade fra hegn til hegn. Grønne bede, træer, Københavnerbænke. Biler kan stadig køre igennem. Renovation og redning er sikret.",
+  "before_label": "I dag — 14 pladser, asfalt, ingen ophold",
+  "after_label": "I morgen — fællesskab, grønt, 9 pladser",
+  "arguments_h2": "Hvorfor det her er en no-brainer",
+  "arguments_sub": "13 argumenter. Ét svar.",
+  "timeline_h2": "Hvad sker der nu?",
+  "timeline_steps": [
+    {
+      "date": "18. maj 2026",
+      "desc": "Ordinær generalforsamling — vi stemmer"
+    },
+    {
+      "date": "Juni 2026",
+      "desc": "Formel ansøgning til kommunen · Vejrenovering begynder i kvarteret"
+    },
+    {
+      "date": "Sommer–efterår 2026",
+      "desc": "Kommunen lægger nyt asfalt + etablerer fællesskabsgaden"
+    },
+    {
+      "date": "2027",
+      "desc": "Fællesskabsgaden står klar. Kommunen drifter."
+    }
+  ],
+  "quiet_h2": "Hvad siger bestyrelsen — og hvad svarer vi?",
+  "quiet_p1": "Bestyrelsen har meddelt at de vil fraråde forslaget, medmindre fire betingelser er opfyldt. Vi tager betingelserne seriøst og svarer på dem her.",
+  "quiet_p2": "Vi respekterer bestyrelsens rolle. Men det er jer som beboere der afgør dette på generalforsamlingen den 18. maj. Simpelt flertal.",
+  "quiet_p3": "Kom og stem. Tag en nabo med.",
+  "quiet_p4": "",
+  "quiet_p5": "",
+  "footer_h2": "Mød op. Stem. Bestem.",
+  "footer_event_type": "Ordinær generalforsamling",
+  "footer_event_date": "Mandag den 18. maj 2026",
+  "footer_event_location": "Kulturcenter Kildevæld, kl. 19:00",
+  "footer_cta": "Din stemme tæller →",
+  "footer_contact_email": "max@lobermeyer.dk",
+  "footer_group": "Initiativgruppen for Fællesskabsgaden",
+  "signup_h3": "Skriv dit hus op",
+  "signup_sub": "Vis at dit hus støtter Fællesskabsgaden. Vi bruger listen til at demonstrere opbakning på generalforsamlingen.",
+  "signup_success": "Vi ses på generalforsamlingen den 18. maj.",
+  "password": "engelstedsgade",
+  "faq_why_gf_q": "Hvad kræver et ja på generalforsamlingen?",
+  "faq_why_gf_a": "Simpelt flertal. Det vil sige over halvdelen af de fremmødte stemmer ja. Vedtægternes §14 er klar: der kræves ikke enstemmighed. Det er det samme grundlag som alle andre beslutninger i foreningen."
 }

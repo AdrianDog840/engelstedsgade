@@ -2,6 +2,8 @@ backend:
   name: github
   repo: AdrianDog840/engelstedsgade
   branch: main
+  base_url: https://oauth.engelstedsgade.dk
+  auth_endpoint: /auth
 
 media_folder: "images"
 public_folder: "/images"
@@ -14,9 +16,79 @@ collections:
         label: "Forside"
         file: "_data/content.json"
         fields:
-          - { label: "Hero overskrift", name: "hero_title", widget: "string" }
-          - { label: "Hero underoverskrift", name: "hero_subtitle", widget: "string" }
-          - { label: "Hero intro", name: "hero_intro", widget: "text" }
-          - { label: "GF dato (fx 18. maj 2026)", name: "gf_date", widget: "string" }
-          - { label: "GF type (ordinær / ekstraordinær)", name: "gf_type", widget: "string" }
-          - { label: "CTA knap tekst", name: "cta_text", widget: "string" }
+          - label: "🔒 Hero sektion"
+            name: "hero_section"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Hero overskrift", name: "hero_title", widget: "string" }
+              - { label: "Hero underoverskrift", name: "hero_subtitle", widget: "string" }
+              - { label: "Hero intro tekst", name: "hero_intro", widget: "text" }
+              - { label: "CTA knap tekst", name: "cta_text", widget: "string" }
+
+          - label: "📅 GF info"
+            name: "gf_section"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "GF dato (vist på siden)", name: "gf_date", widget: "string" }
+              - { label: "GF type", name: "gf_type", widget: "string" }
+
+          - label: "📖 Forslaget — tekst"
+            name: "proposal_section"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Overskrift", name: "proposal_h2", widget: "string" }
+              - { label: "Afsnit 1", name: "proposal_p1", widget: "text" }
+              - { label: "Afsnit 2", name: "proposal_p2", widget: "text" }
+              - { label: "Afsnit 3", name: "proposal_p3", widget: "text" }
+              - { label: "Før-billede label", name: "before_label", widget: "string" }
+              - { label: "Efter-billede label", name: "after_label", widget: "string" }
+
+          - label: "⏱️ Tidslinje"
+            name: "timeline_section"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Overskrift", name: "timeline_h2", widget: "string" }
+              - label: "Trin"
+                name: "timeline_steps"
+                widget: "list"
+                fields:
+                  - { label: "Dato", name: "date", widget: "string" }
+                  - { label: "Beskrivelse", name: "desc", widget: "string" }
+
+          - label: "💬 Den stille besked"
+            name: "quiet_section"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Overskrift", name: "quiet_h2", widget: "string" }
+              - { label: "Afsnit 1", name: "quiet_p1", widget: "text" }
+              - { label: "Afsnit 2", name: "quiet_p2", widget: "text" }
+              - { label: "Afsnit 3", name: "quiet_p3", widget: "text" }
+              - { label: "Afsnit 4", name: "quiet_p4", widget: "text" }
+              - { label: "Afsnit 5 (valgfri)", name: "quiet_p5", widget: "text", required: false }
+
+          - label: "🏁 Footer / Mød op"
+            name: "footer_section"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Overskrift", name: "footer_h2", widget: "string" }
+              - { label: "Begivenhedstype", name: "footer_event_type", widget: "string" }
+              - { label: "Dato (fed)", name: "footer_event_date", widget: "string" }
+              - { label: "Sted og tid", name: "footer_event_location", widget: "string" }
+              - { label: "CTA knap tekst", name: "footer_cta", widget: "string" }
+              - { label: "Kontakt email", name: "footer_contact_email", widget: "string" }
+              - { label: "Gruppe navn", name: "footer_group", widget: "string" }
+
+          - label: "📝 Tilmelding"
+            name: "signup_section"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Overskrift", name: "signup_h3", widget: "string" }
+              - { label: "Undertekst", name: "signup_sub", widget: "text" }
+              - { label: "Succes-besked (efter tilmelding)", name: "signup_success", widget: "string" }
